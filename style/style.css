@@ -72,6 +72,17 @@ h6 {
   isolation: isolate;
 }
 
+/* 
+  Links and lists
+*/
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /* ------------------------------------- GENERAL RESETS ENDS ------------------------------------- */
 
 /* ------------------------------------- VARIBALE DECLARATION STARTS------------------------------------- */
@@ -94,6 +105,7 @@ h6 {
   --paragraph-text-fs: 0.875rem;
   --sub-heading-fs: 3.5rem;
   --medium-fs: 1.25rem;
+  --menu-fs: 1.75rem;
 
   /* Font weights */
   --bold-fw: 700;
@@ -102,7 +114,104 @@ h6 {
   --regular-fw: 400;
 }
 
+.wrapper {
+  width: 100%;
+}
 /* ------------------------------------- VARIBALE DECLARATION ENDS ------------------------------------- */
 
-/* ------------------------------------- VARIBALE DECLARATION STARTS ------------------------------------- */
+/* ------------------------------------- REUSABLE CLASSES STARTS ------------------------------------- */
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  gap: var(--flex-gap, 2rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap, 2rem);
+}
+
 /* ------------------------------------- RESUABLE CLASSES ENDS ------------------------------------- */
+
+/* ------------------------------------- NAVIGATION CLASSES STARTS ------------------------------------- */
+.nav {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.logo-image {
+  width: 85px;
+}
+
+.nav-list {
+  position: absolute;
+  right: -0.4rem;
+  top: 1.7rem;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  padding-top: 2.8rem;
+  padding-left: 2rem;
+  border-radius: 10px;
+  flex-direction: column;
+  --flex-gap: 0.8rem;
+  height: 60vh;
+  min-width: 60%;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(120%);
+  opacity: 0;
+}
+
+.nav-list.opened {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.nav-list__item {
+  font-family: var(--body-ff);
+  font-size: var(--menu-fs);
+  font-weight: var(--bold-fw);
+  color: var(--dark-color);
+  letter-spacing: 4.72px;
+}
+
+.other-nav-action {
+  position: absolute;
+  width: 70%;
+  bottom: 08px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-nav-action .nav-list__item {
+  font-size: 1rem;
+  color: var(--white-color);
+}
+
+.divider {
+  width: 2px;
+  height: 35px;
+  background-color: var(--dark-color);
+}
+
+.menu-btn {
+  width: 35px;
+  aspect-ratio: 1;
+  border: none;
+  background-color: transparent;
+  background-image: url("../images/menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* ------------------------------------- NAVIGATION CLASSES ENDS ------------------------------------- */
