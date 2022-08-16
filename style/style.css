@@ -215,3 +215,19 @@ ul {
 }
 
 /* ------------------------------------- NAVIGATION CLASSES ENDS ------------------------------------- */
+
+/* -------------------------------------HERO CLASSES BEGIN-------------------------------------------- */
+section{
+  margin-top: 2rem;
+  background: var(--accent-color);
+  height: 80vh;
+}
+
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
