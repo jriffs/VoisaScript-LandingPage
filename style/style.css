@@ -218,13 +218,21 @@ ul {
 
 /* -------------------------------------HERO CLASSES BEGIN-------------------------------------------- */
 #hero{
-
   margin-top: 2rem;
   background: var(--accent-color);
-  height: 80vh;
+  height: 70vh;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 
+}
+
+
+.contents{
+  height: 100%;
+  margin: 1rem;
 }
 #hero h1{
   color: var(--primary-color);
@@ -233,28 +241,33 @@ ul {
 }
 
 #hero h2{
+
   color: var(--dark-color);
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: var(--regular-fw);
   word-spacing: 0.1rem;
+  padding: 1rem 1rem;
+
+}
+.img{
+  max-width: 60%;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
 
 }
 
 #hero .start{
+  margin-top: 1rem;
   background-color: var(--primary-color);
   color: var(--white-color);
   border-radius: 30px;
   width: 150px;
-  padding: 0.3rem 0;
+  padding: 0.5rem 1rem;
   letter-spacing: 0.15rem;
  
 }
 
-.img{
-  max-width: 60%;
-  height: auto;
 
-}
 
 
 
