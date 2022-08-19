@@ -217,64 +217,93 @@ ul {
 /* ------------------------------------- NAVIGATION CLASSES ENDS ------------------------------------- */
 
 /* -------------------------------------HERO CLASSES BEGIN-------------------------------------------- */
-#hero{
-  margin-top: 2rem;
-  background: var(--accent-color);
-  height: 70vh;
+.hero{
+ background-color: var(--accent-color);
+ width: 90%;
+ height: 90%;
+ margin-top: 2rem;
+ margin-inline: auto;
+}
+.container--hero{
   flex-direction: column;
-  text-align: center;
-  justify-content: space-between;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-
+  margin-inline: auto;
 }
 
-
-.contents{
-  height: 100%;
-  margin: 1rem;
-}
-#hero h1{
-  color: var(--primary-color);
-  font-size: var(--main-heading-fs);
-  font-weight: var(--regular-fw);
-}
-
-#hero h2{
-
-  color: var(--dark-color);
-  font-size: 1.9rem;
-  font-weight: var(--regular-fw);
+.btn-start,
+.hero h1,p
+{
+  letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
-  padding: 1rem 1rem;
-
-}
-.img{
-  max-width: 60%;
-  margin-left: 4rem;
-  margin-bottom: 3rem;
-
+  text-transform: capitalize;
 }
 
-#hero .start{
-  margin-top: 1rem;
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  border-radius: 30px;
-  width: 150px;
-  padding: 0.5rem 1rem;
-  letter-spacing: 0.15rem;
- 
-}
-
-
-
-
-
-.hide{
-  display: none;
-}
-
-.show{
+.hero img{
   display: block;
+  max-height:17rem;
+
+}
+
+.hero h1{
+  color: var(--primary-color);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.204);
+  font-weight: var(--medium-fw);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.hero p{
+  font-size: var(--medium-fs);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.btn-start{
+  color: var(--white-color);
+  font-weight: var(--bold-fw);
+  font-family: var(--body-ff);
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  padding: 0.7rem 1rem;
+  border-radius: 50px;
+}
+.spit{
+  width: 50%;
+}
+
+
+
+
+
+/* -------------------------------------HERO CLASSES ENDS-------------------------------------------- */
+
+
+/* -------------------------------------ABOUT CLASSES BEGIN-------------------------------------------- */
+
+.about-content{
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.about-content h3{
+  text-align: center;
+}
+
+.about-content h4{
+  margin: 2rem 0;
+}
+
+.article-images{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article-images >li{
+  flex-basis: 200px;
+}
+
+.article-images li img{
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  vertical-align: middle;
 }
