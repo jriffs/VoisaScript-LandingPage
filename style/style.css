@@ -220,26 +220,35 @@ ul {
 .hero{
  background-color: var(--accent-color);
  width: 90%;
- height: 90%;
+ height: 100%;
  margin-top: 2rem;
  margin-inline: auto;
 }
 .container--hero{
+  height: 90%;
+  width: 100%;
+}
+.split{
   flex-direction: column;
-  margin-inline: auto;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .btn-start,
-.hero h1,p
+.container--hero h1,
+.container--hero p
 {
   letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
   text-transform: capitalize;
+  max-width: 100%;
 }
 
-.hero img{
+.hero div img{
   display: block;
   max-height:17rem;
+  max-width: 100%;
+  margin-left: 2rem;
 
 }
 
@@ -249,26 +258,28 @@ ul {
   font-weight: var(--medium-fw);
   font-size: 4rem;
   text-align: center;
+  max-width: 100%;
+  font-family: var(--body-ff);
+
 }
 
-.hero p{
-  font-size: var(--medium-fs);
-  margin-inline: auto;
-  padding-inline: 1rem;
+.split p{
+  font-size: 2rem;
+  padding:  0 2rem;
+  margin: 0 auto;
+
 }
 
 .btn-start{
   color: var(--white-color);
   font-weight: var(--bold-fw);
-  font-family: var(--body-ff);
+  font-family: var(--condesed-ff);
   font-size: 1rem;
   background-color: var(--primary-color);
   padding: 0.7rem 1rem;
   border-radius: 50px;
 }
-.spit{
-  width: 50%;
-}
+
 
 
 
@@ -279,31 +290,64 @@ ul {
 
 /* -------------------------------------ABOUT CLASSES BEGIN-------------------------------------------- */
 
-.about-content{
-  margin-top: 2rem;
-  flex-direction: column;
+.about{
+  width: 90%;
+  height: 100%;
+  margin-top: 1rem;
+  margin-inline: auto;
 }
 
-.about-content h3{
+.about--info{
+  letter-spacing:2.35px;
+  word-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.about--info h3{
+  margin: 2rem auto;
   text-align: center;
+  font-family: var(--condesed-ff);
+  font-weight: normal;
 }
 
-.about-content h4{
-  margin: 2rem 0;
+.about--info h4{
+  margin-bottom: 2rem;
+  font-family: var(--body-ff);
 }
 
-.article-images{
+
+
+.about--images{
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.article-images >li{
-  flex-basis: 200px;
+.about--images img{
+  height: 100px;
+  width: 100px;
+  display: block;
+  flex-grow: 0.5;
 }
 
-.article-images li img{
-  width: 20%;
-  height: 20%;
-  object-fit: cover;
-  vertical-align: middle;
+.about--mission p{ 
+  margin-top: 3rem;
+  font-family: var(--header-ff);
+  font-size: 14px;
+ 
 }
+
+.about--mission .red{
+  color: #f20732;
+}
+.about--mission h5{
+  font-weight: var(--bold-fw);
+  font-family: var(  --condesed-ff  );
+ 
+
+}
+.about--mission ul{
+  list-style-type:initial;
+  line-height: 1.8rem;
+  font-weight: var(--regular-fw);
+}
+
+
