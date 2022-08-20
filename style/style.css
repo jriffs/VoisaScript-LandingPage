@@ -215,3 +215,139 @@ ul {
 }
 
 /* ------------------------------------- NAVIGATION CLASSES ENDS ------------------------------------- */
+
+/* -------------------------------------HERO CLASSES BEGIN-------------------------------------------- */
+.hero{
+ background-color: var(--accent-color);
+ width: 90%;
+ height: 100%;
+ margin-top: 2rem;
+ margin-inline: auto;
+}
+.container--hero{
+  height: 90%;
+  width: 100%;
+}
+.split{
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.btn-start,
+.container--hero h1,
+.container--hero p
+{
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+  text-transform: capitalize;
+  max-width: 100%;
+}
+
+.hero div img{
+  display: block;
+  max-height:17rem;
+  max-width: 100%;
+  margin-left: 2rem;
+
+}
+
+.hero h1{
+  color: var(--primary-color);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.204);
+  font-weight: var(--medium-fw);
+  font-size: 4rem;
+  text-align: center;
+  max-width: 100%;
+  font-family: var(--body-ff);
+
+}
+
+.split p{
+  font-size: 2rem;
+  padding:  0 2rem;
+  margin: 0 auto;
+
+}
+
+.btn-start{
+  color: var(--white-color);
+  font-weight: var(--bold-fw);
+  font-family: var(--condesed-ff);
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  padding: 0.7rem 1rem;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+/* -------------------------------------HERO CLASSES ENDS-------------------------------------------- */
+
+
+/* -------------------------------------ABOUT CLASSES BEGIN-------------------------------------------- */
+
+.about{
+  width: 90%;
+  height: 100%;
+  margin-top: 1rem;
+  margin-inline: auto;
+}
+
+.about--info{
+  letter-spacing:2.35px;
+  word-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.about--info h3{
+  margin: 2rem auto;
+  text-align: center;
+  font-family: var(--condesed-ff);
+  font-weight: normal;
+}
+
+.about--info h4{
+  margin-bottom: 2rem;
+  font-family: var(--body-ff);
+}
+
+
+
+.about--images{
+  flex-wrap: wrap;
+}
+
+.about--images img{
+  height: 100px;
+  width: 100px;
+  display: block;
+  flex-grow: 0.5;
+}
+
+.about--mission p{ 
+  margin-top: 3rem;
+  font-family: var(--header-ff);
+  font-size: 14px;
+ 
+}
+
+.about--mission .red{
+  color: #f20732;
+}
+.about--mission h5{
+  font-weight: var(--bold-fw);
+  font-family: var(  --condesed-ff  );
+ 
+
+}
+.about--mission ul{
+  list-style-type:initial;
+  line-height: 1.8rem;
+  font-weight: var(--regular-fw);
+}
+
+
