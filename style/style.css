@@ -124,6 +124,7 @@ body {
 }
 .wrapper {
   width: 100%;
+  overflow-x: hidden;
 }
 .container {
   width: 90%;
