@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swipper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- External CSS -->
     <link rel="stylesheet" href="./style/style.css" />
     <title>VOISASCRIPT</title>
@@ -33,16 +38,8 @@
           <button class="menu-btn" aria-hidden="menu button"></button>
         </nav>
       </header>
-    </div> 
-    <!-------------------Hero------------------>
-    <section class="hero">
-      <div class="container--hero flex">
-        <div class="split flex">
-          <div >
-            <h1>VoisaScript</h1>
-            <p>Introducing a new  and better way to comment your code...</p>
-          </div>
 
+<<<<<<< HEAD
           <div>
             <img
             class="hero-img"
@@ -55,72 +52,225 @@
         </div>
         <div class="start">
           <a class="btn-start" href="#">Get Started</a>
+=======
+      <!-------------------Hero------------------>
+      <section class="hero">
+        <div class="container--hero flex">
+          <div class="split flex">
+            <div>
+              <h1>VoisaScript</h1>
+              <p>Introducing a new and better way to comment your code...</p>
+            </div>
+
+            <div class="hero-img">
+              <img
+                src="./images/voice chat 1.png"
+                alt="A girl standing next to a phone"
+              />
+            </div>
+          </div>
+          <div>
+            <a class="btn btn-primary btn-start" href="#">Get Started</a>
+          </div>
+>>>>>>> a3b65acfcabe576b9f32dc28fcad13c4c9c32b95
         </div>
-      </div>
-    </section>
-    <!---------------------------- End Hero -------------------------------->
-      <section class="about">
-      
-        <div class="about--info">
-          <h3>About VoisaScript</h3>
-          <h4>Our Mission</h4>
-        </div>
-
-
-        <div class="container--about flex">
-
-        <div class="about--images flex">            
-              <img src="./images/voice chat 1.png" class="about-img" />
-            
-              <img src="./images/voice chat 1.png" class="about-img" />
-            
-              <img src="./images/voice chat 1.png" class="about-img" />
-            
-        </div>
-
-        </div>
-
-
-        <div class="about--mission">
-          <p>
-            Commenting generally is very good practice for
-            developers, because it helps to add extra information
-            like context and nomenclature misconceptions
-            surrounding the code in question, but as important as
-            that is, it can be very unappealing and ineffective.
-            VoisaScript takes away the stress and monotony of
-            code commenting and creates a seamless and
-            effective experience for both parties in the
-            communication chain (the author and its intended
-            audience).
-          </p>
-          <span class="red">with VoisaScript:</span>
-          <h5>The Code Owner Can:</h5>
-          <ul>
-            <li>Give a more detailed code explanation.</li>
-            <li>Explain yourself freely without the need to paraphrase.</li>
-            <li>Save time and energy of typing out comments</li>
-          </ul>
-
-          <h5>The code audience Can</h5>
-          <ul>
-            <li>
-              A better understanding of the incomprehensive and crappy code the
-              author wrote by listening to him explain:joy:
-            </li>
-            <li>
-              save the time and energy of reading the comment multiple times
-              before going on to review the code by listening to the code
-              explanation and reviewing the code in the same instant
-            </li>
-          </ul>
-        </div>
-
-      </div>
       </section>
-    
+      <!---------------------------- End Hero -------------------------------->
+      <!---------------------------- Start About -------------------------------->
+      <section class="about">
+        <div class="container">
+          <div class="about--info section--info">
+            <h3>About VoisaScript</h3>
+            <h4>Our Mission</h4>
+          </div>
 
-    <!-- Javascript -->
-    <script src="./VoisaScript.js"></script>
+          <div class="container--about flex">
+            <div class="about--images grid">
+              <div class="about--img top-1">
+                <img src="./images/mission1.jpg" />
+              </div>
+              <div class="about--img top-2">
+                <img src="./images/mission2.jpg" />
+              </div>
+
+              <div class="about--img bottom-1">
+                <img src="./images/mission3.jpg" />
+              </div>
+            </div>
+
+            <div class="about--mission">
+              <p>
+                Commenting generally is very good practice for developers,
+                because it helps to add extra information like context and
+                nomenclature misconceptions surrounding the code in question,
+                but as important as that is, it can be very unappealing and
+                ineffective. VoisaScript takes away the stress and monotony of
+                code commenting and creates a seamless and effective experience
+                for both parties in the communication chain (the author and its
+                intended audience).
+              </p>
+              <h3 class="red" style="padding-top: 25px">With VoisaScript:</h3>
+              <h4>The Code Owner Can:</h4>
+              <ul>
+                <li>Give a more detailed code explanation.</li>
+                <li>Explain yourself freely without the need to paraphrase.</li>
+                <li>Save time and energy of typing out comments</li>
+              </ul>
+
+              <h4>The Code Audience Can</h4>
+              <ul>
+                <li>
+                  A better understanding of the incomprehensive and crappy code
+                  the author wrote by listening to him explain:joy:
+                </li>
+                <li>
+                  Save the time and energy of reading the comment multiple times
+                  before going on to review the code by listening to the code
+                  explanation and reviewing the code in the same instant
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------------- End About -------------------------------->
+
+      <!---------------------------- Start Features -------------------------------->
+
+      <section class="features">
+        <div class="features--info section--info">
+          <h3>Features</h3>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper cards">
+            <div class="swiper-slide card feature-card">
+              <div class="feature-card--image">
+                <img src="./images/friendly.svg" alt="User Friendly" />
+              </div>
+
+              <div class="feature-card--desc">
+                <h3 class="feature-card--desc__header">
+                  Recording Audio Comments
+                </h3>
+                <p class="feature-card--desc__text">
+                  VoisaScript opens up a whole new world of code commenting,
+                  with a lot of Advantages.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card feature-card">
+              <div class="feature-card--image">
+                <img src="./images/friendly.svg" alt="User Friendly" />
+              </div>
+
+              <div class="feature-card--desc">
+                <h3 class="feature-card--desc__header">
+                  Playing Audio Comments
+                </h3>
+                <p class="feature-card--desc__text">
+                  You can play VoisaScript audio comments found in any codebase.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card feature-card">
+              <div class="feature-card--image">
+                <img src="./images/friendly.svg" alt="User Friendly" />
+              </div>
+
+              <div class="feature-card--desc">
+                <h3 class="feature-card--desc__header">Convenience</h3>
+                <p class="feature-card--desc__text">
+                  You can record and play audio comments in the same tab as the
+                  code you're trying to review or explain. It also defeats the
+                  monotony that comes with the conventional method of Typing out
+                  the comments.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card feature-card">
+              <div class="feature-card--image">
+                <img src="./images/friendly.svg" alt="User Friendly" />
+              </div>
+
+              <div class="feature-card--desc">
+                <h3 class="feature-card--desc__header">
+                  Ease of communication
+                </h3>
+                <p class="feature-card--desc__text">
+                  VoisaScript audio Eases the flow of communication. It gives
+                  the experience of having a conversation with the code author.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card feature-card">
+              <div class="feature-card--image">
+                <img src="./images/friendly.svg" alt="User Friendly" />
+              </div>
+
+              <div class="feature-card--desc">
+                <h3 class="feature-card--desc__header">
+                  Encourages and Improves Collaboration
+                </h3>
+                <p class="feature-card--desc__text">
+                  Better explained code leads to better understanding of the
+                  code, and ultimately better collaboration.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card feature-card">
+              <div class="feature-card--image">
+                <img src="./images/friendly.svg" alt="User Friendly" />
+              </div>
+
+              <div class="feature-card--desc">
+                <h3 class="feature-card--desc__header">Better Looking Code</h3>
+                <p class="feature-card--desc__text">
+                  With conventional code comment writing comes the pain of
+                  having to write more lines of comments to explain your code,
+                  but more lines of comments makes code look clustered and
+                  untidy. VoisaScript replaces all of those lines of comments
+                  with just one line of comment, which is a link to the recorded
+                  VoisaScript audio
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide card feature-card">
+              <div class="feature-card--image">
+                <img src="./images/friendly.svg" alt="User Friendly" />
+              </div>
+
+              <div class="feature-card--desc">
+                <h3 class="feature-card--desc__header">
+                  Easey Function Naming
+                </h3>
+                <p class="feature-card--desc__text">
+                  No need to specify Long or Short variable or function name,
+                  Now you can just explain what the variables and functions are,
+                  and what they do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!---------------------------- End Features -------------------------------->
+
+      <!-- Swipper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <!-- Javascript -->
+      <script src="./VoisaScript.js"></script>
+    </div>
   </body>
 </html>

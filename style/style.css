@@ -18,8 +18,7 @@
 /*
   3. Allow percentage-based heights in the application
 */
-html,
-body {
+html {
   height: 100%;
 }
 /*
@@ -30,6 +29,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /*
@@ -114,12 +114,18 @@ ul {
   --regular-fw: 400;
 }
 
-.wrapper {
-  width: 100%;
-}
 /* ------------------------------------- VARIBALE DECLARATION ENDS ------------------------------------- */
 
 /* ------------------------------------- REUSABLE CLASSES STARTS ------------------------------------- */
+
+body {
+  font-family: var(--body-ff);
+  font-size: 1.5rem;
+}
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
 .container {
   width: 90%;
   margin-inline: auto;
@@ -133,6 +139,61 @@ ul {
 .grid {
   display: grid;
   gap: var(--grid-gap, 2rem);
+}
+
+.cards {
+  padding: 1rem;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2), 0 0 14px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  font-weight: var(--bold-fw);
+  font-family: var(--header-ff);
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 50px;
+  letter-spacing: 4.72px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* .btn-secondary {
+} */
+
+/* Moved the section Headers so that we can easily reuse them. */
+
+.section--info {
+  letter-spacing: 2.35px;
+  word-spacing: 0.1rem;
+  text-transform: capitalize;
+  padding-top: 1rem;
+}
+
+.section--info h3 {
+  margin: 2rem auto;
+  text-align: center;
+  font-family: var(--condesed-ff);
+  font-weight: normal;
+}
+
+.section--info h4 {
+  margin-bottom: 2rem;
+  font-family: var(--body-ff);
+}
+
+/* Swiper */
+.swiper {
+  max-width: 600px;
+  height: 100%;
+  padding: 50px;
+  padding-top: 0;
 }
 
 /* ------------------------------------- RESUABLE CLASSES ENDS ------------------------------------- */
@@ -217,44 +278,59 @@ ul {
 /* ------------------------------------- NAVIGATION CLASSES ENDS ------------------------------------- */
 
 /* -------------------------------------HERO CLASSES BEGIN-------------------------------------------- */
-.hero{
- background-color: var(--accent-color);
- width: 90%;
- height: 100%;
- margin-top: 2rem;
- margin-inline: auto;
+.hero {
+  background-color: var(--accent-color);
+  width: 90%;
+  height: 100%;
+  margin-top: 2rem;
+  margin-inline: auto;
+  padding-bottom: 2rem;
 }
-.container--hero{
-  height: 90%;
+.container--hero {
+  height: 100%;
   width: 100%;
   flex-direction: column;
+<<<<<<< HEAD
   justify-content: space-evenly;
   text-align: center;
 }
 
 .split{
+=======
+  align-items: center;
+  justify-content: center;
+}
+.split {
+>>>>>>> a3b65acfcabe576b9f32dc28fcad13c4c9c32b95
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   text-align: center;
 }
 
-.btn-start,
 .container--hero h1,
-.container--hero p
-{
+.container--hero p {
   letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
   text-transform: capitalize;
   max-width: 100%;
 }
 
+<<<<<<< HEAD
 .hero-img{
   display: block;
 max-width: 100%;
 
+=======
+.hero div img {
+  display: block;
+  max-height: 17rem;
+  max-width: 100%;
+  margin-left: 2rem;
+>>>>>>> a3b65acfcabe576b9f32dc28fcad13c4c9c32b95
 }
 
-.hero h1{
+.hero h1 {
   color: var(--primary-color);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.204);
   font-weight: var(--medium-fw);
@@ -262,16 +338,21 @@ max-width: 100%;
   text-align: center;
   max-width: 100%;
   font-family: var(--body-ff);
-
 }
 
+<<<<<<< HEAD
 .split p{
   font-size: 1.5rem;
   padding:  0 2rem;
+=======
+.split p {
+  font-size: 2rem;
+  padding: 0 2rem;
+>>>>>>> a3b65acfcabe576b9f32dc28fcad13c4c9c32b95
   margin: 0 auto;
-
 }
 
+<<<<<<< HEAD
 .btn-start{
   color: var(--white-color);
   font-weight: var(--bold-fw);
@@ -286,72 +367,61 @@ max-width: 100%;
 
 
 
+=======
+/* .btn-start {
+} */
+>>>>>>> a3b65acfcabe576b9f32dc28fcad13c4c9c32b95
 
 /* -------------------------------------HERO CLASSES ENDS-------------------------------------------- */
 
-
 /* -------------------------------------ABOUT CLASSES BEGIN-------------------------------------------- */
 
-.about{
+.about {
   width: 90%;
   height: 100%;
   margin-top: 1rem;
   margin-inline: auto;
 }
 
-.about--info{
-  letter-spacing:2.35px;
-  word-spacing: 0.1rem;
-  text-transform: capitalize;
+.about--images {
+  --grid-gap: 0.4rem;
+  max-width: 350px;
+  grid-template-areas:
+    " top-1 top-2 "
+    " bottom-1 bottom-1 ";
 }
 
-.about--info h3{
-  margin: 2rem auto;
-  text-align: center;
-  font-family: var(--condesed-ff);
-  font-weight: normal;
+.top-1 {
+  grid-area: top-1;
+}
+.top-2 {
+  grid-area: top-2;
 }
 
-.about--info h4{
-  margin-bottom: 2rem;
-  font-family: var(--body-ff);
+.bottom-1 {
+  grid-area: bottom-1;
 }
 
-
-
-.about--images{
-  flex-wrap: wrap;
-}
-
-.about--images img{
-  height: 100px;
-  width: 100px;
-  display: block;
-  flex-grow: 0.5;
-}
-
-.about--mission p{ 
+.about--mission p {
   margin-top: 3rem;
-  font-family: var(--header-ff);
-  font-size: 14px;
- 
+
+  /* font-size: 1.2rem; */
 }
 
-.about--mission .red{
+.about--mission .red {
   color: #f20732;
 }
-.about--mission h5{
+.about--mission h5 {
   font-weight: var(--bold-fw);
-  font-family: var(  --condesed-ff  );
- 
-
+  font-family: var(--condesed-ff);
 }
-.about--mission ul{
-  list-style-type:initial;
+.about--mission ul {
+  list-style-type: initial;
   line-height: 1.8rem;
   font-weight: var(--regular-fw);
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1100px) {
   .hero{
   
@@ -391,4 +461,28 @@ max-width: 100%;
     
   }
   
+=======
+.container--about {
+  flex-direction: column;
+  align-items: center;
+  --flex-gap: 0.8rem;
+}
+
+/* Features section */
+
+.feature-card {
+  /* margin-block: 2rem; */
+  padding: 1rem;
+  min-width: 150px;
+  height: 420px;
+  overflow-x: hidden;
+}
+
+.feature-card--image {
+  min-width: 100px;
+}
+
+.feature-card--desc__text {
+  font-size: 1.2rem;
+>>>>>>> a3b65acfcabe576b9f32dc28fcad13c4c9c32b95
 }

@@ -15,14 +15,25 @@ function openMenu() {
   }
 }
 
-window.addEventListener('resize', e =>{
+window.addEventListener("resize", (e) => {
   let width = document.body.clientWidth;
-  console.log(width)
-  if(parseInt(width)>480){
-    heroContent.classList.add("show")
-    console.log("check")
-  }
-  else{
+  console.log(width);
+  if (parseInt(width) > 480) {
+    heroContent.classList.add("show");
+    console.log("check");
+  } else {
     heroContent.classList.remove("show");
   }
-})
+});
+
+// Swiper
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
