@@ -1,5 +1,6 @@
 const menuButton = document.querySelector(".menu-btn"),
   navigationList = document.querySelector(".nav-list"),
+  navigationListItems = document.querySelector(".nav-list_item"),
   heroContent = document.querySelector(".hero-content ");
 
 let stat = true;
